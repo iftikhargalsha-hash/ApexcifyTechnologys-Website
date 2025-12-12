@@ -1,0 +1,216 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f5f7;
+}
+
+section {
+    padding: 60px 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.navbar {
+    background: #0d0d0d;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+.navbar a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: dodgerblue;
+}
+
+
+.hero {
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('https://images.unsplash.com/photo-1553877522-43269d4ea984') center/cover no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    animation: fade 2s ease-in-out;
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.service-box {
+    width: 250px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    transition: 0.3s;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    background: #e9f1ff;
+}
+
+
+.filter-btns {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-btns button {
+    padding: 10px 18px;
+    margin: 5px;
+    border: none;
+    background: #222;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.filter-btns button:hover {
+    background: #444;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.portfolio img {
+    width: 260px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.portfolio img:hover {
+    transform: scale(1.05);
+}
+
+
+#lightbox {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    width: 60%;
+    border-radius: 10px;
+}
+
+
+.team-box {
+    width: 200px;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.team-box:hover {
+    transform: translateY(-10px);
+}
+
+.team-box img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+
+.testimonials {
+    background: white;
+}
+
+.testimonial {
+    width: 300px;
+    padding: 20px;
+    background: #e9f1ff;
+    margin: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+
+.slider img {
+    width: 70%;
+    max-width: 700px;
+    border-radius: 12px;
+}
+
+.slider button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background: #0d0d0d;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+.contact form {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.contact button {
+    padding: 12px 20px;
+    background: #0d0d0d;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+.footer {
+    background: #0d0d0d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
