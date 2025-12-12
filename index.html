@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Apexcify Technologys</title>
+
+
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+
+<div class="navbar">
+    <h2>Apexcify</h2>
+    <div>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
+
+
+<div class="hero">
+    <h1>We Build Future-Ready Technology</h1>
+</div>
+
+<section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Apexcify Technologys provides modern software solutions, websites, apps, and digital services.</p>
+</section>
+
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services-container">
+        <div class="service-box">Web Development</div>
+        <div class="service-box">App Development</div>
+        <div class="service-box">UI/UX Designing</div>
+        <div class="service-box">Branding & Identity</div>
+        <div class="service-box">Automation</div>
+    </div>
+</section>
+
+
+<section id="portfolio">
+    <h2>Our Portfolio</h2>
+
+    <div class="filter-btns">
+        <button onclick="filter('all')">All</button>
+        <button onclick="filter('web')">Web</button>
+        <button onclick="filter('app')">Apps</button>
+    </div>
+
+    <div class="portfolio">
+        <img src="a1.jpg" class="web" onclick="openLightbox(this.src)">
+        <img src="a2.jpg" class="app" onclick="openLightbox(this.src)">
+        <img src="a3.jpg" class="web" onclick="openLightbox(this.src)">
+        <img src="a4.jpg" class="app" onclick="openLightbox(this.src)">
+    </div>
+</section>
+
+
+<div id="lightbox" onclick="closeLightbox()">
+    <img id="lightImage">
+</div>
+
+
+<section id="team">
+    <h2>Our Team</h2>
+
+    <center>
+        <div class="team-box">
+            <img src="a11.jpg">
+            <h3>Ali Raza</h3>
+            <p>CEO & Founder</p>
+        </div>
+
+        <div class="team-box">
+            <img src="a22.jpg">
+            <h3>Ayesha Khan</h3>
+            <p>Lead Designer</p>
+        </div>
+
+        <div class="team-box">
+            <img src="a33.jpg">
+            <h3>Bilal Ahmed</h3>
+            <p>Full Stack Developer</p>
+        </div>
+    </center>
+</section>
+
+
+<section class="testimonials">
+    <h2>What Clients Say</h2>
+
+    <center>
+        <div class="testimonial">"Amazing work! Professional and fast."</div>
+        <div class="testimonial">"Our business grew after using their services."</div>
+        <div class="testimonial">"Highly recommended for IT projects."</div>
+    </center>
+</section>
+
+<section class="slider">
+    <h2>Our Highlights</h2>
+
+    <img id="slideImg" src="a4.jpg">
+
+    <br>
+    <button onclick="prev()">Prev</button>
+    <button onclick="next()">Next</button>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button>Send Message</button>
+    </form>
+</section>
+
+<div class="footer">
+    © 2025 Apexcify Technologys. All Rights Reserved.
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
